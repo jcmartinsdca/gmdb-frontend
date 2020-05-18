@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import BrowseMovies from './browse'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowseMovies />,
   </React.StrictMode>,
   document.getElementById('root')
 );
