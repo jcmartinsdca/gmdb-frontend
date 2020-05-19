@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import BrowseMovies from './browse'
+import BrowseMovies from './BrowseMovies'
 
 ReactDOM.render(
   <React.StrictMode>

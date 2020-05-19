@@ -2,7 +2,8 @@ import React from 'react'
 
 export default class BrowseMovies extends React.Component {
 		state = {
-			movies: []
+			movies: [],
+			error: ''
 		}
 		
 		componentDidMount() {
@@ -12,12 +13,15 @@ export default class BrowseMovies extends React.Component {
 				this.setState({ movies: movieslist });
 			});
 		}
-		
+
+
+
 		render() {
 			return (
 				<ul>
-					{this.state.movies.map((movie) => (
-						<li key={movie.movieId}>{movie.title}</li>
+
+					{this.state.movies.map((movies) => (
+							<li key={movies.movieId}>{movies.title}</li>
 					))}
 				</ul>
 			)
